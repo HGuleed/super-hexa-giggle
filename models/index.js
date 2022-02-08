@@ -8,5 +8,4 @@ User.hasMany(Article, {
 
 Article.belongsTo(User, {
   foreignKey: "user_id",
-  onDelete: "SET NULL",
 });
