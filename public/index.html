@@ -7,14 +7,27 @@
     <title>The Tech Blog</title>
   </head>
   <body>
-    <header>
-      <nav>
-        <a href="../dashboard.handlebars">DashBoard</a>
-        <a href="../login.handlebars">Login</a>
-        <a href="../logout.handlebars">Logout</a>
-      </nav>
-      <h1>The Tech Blog</h1>
-    </header>
-    <main>testing</main>
+    <div class="">
+      <header>
+        <h1>
+          <a href="/">Just Tech News</a>
+        </h1>
+        <nav>
+          {{#if loggedIn}}
+          <a href="/dashboard">dashboard</a>
+          <button id="logout" class="btn-no-style">logout</button>
+          {{else}}
+          <a href="/login">login</a>
+          {{/if}}
+        </nav>
+      </header>
+    <main>
+      <label for="userName">
+        <input type="text" class="userName" />
+      </label>
+      <label for="password">
+        <input type="text" />
+      </label>
+    </main>
   </body>
 </html>

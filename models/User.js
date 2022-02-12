@@ -27,15 +27,6 @@ User.init(
         len: [4],
       },
     },
-    article_id: {
-      type: DataTypes.INTEGER,
-      allowNull: true,
-      autoIncrement: true,
-      references: {
-        model: "article",
-        key: "id",
-      },
-    },
   },
   {
     hooks: {
